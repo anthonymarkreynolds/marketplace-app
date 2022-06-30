@@ -1,11 +1,17 @@
-<header>
-  <h2>Welcome<%= user_signed_in? ? ", #{current_user.username}" : "" %></h2>
+<header class="header">
+  <h2>Challenge Code<h2>
+  <h4>Welcome<%= user_signed_in? ? ", #{current_user.username}" : "" %></h4>
   <nav>
     <% if user_signed_in? %>
       <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
+      <%= link_to "My Profile", "/users/#{current_user.username}"%>
     <% else %>
       <%= link_to "Sign up", new_user_registration_path %>
       <%= link_to "Sign in", new_user_session_path %>
     <% end %>
+  </nav>
+  <nav>
+    <%= link_to "Home", root_url %>
+    <%= link_to "Challenges", challenges_url %>
   </nav>
 </header>

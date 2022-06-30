@@ -13,9 +13,13 @@
   </head>
 
   <body>
-    <%= render 'shared/header' %>
+    <%= render "shared/header" %>
     <hr>
-    <%= yield %>
+    <main class="container">
+      <%= yield %>
+    </main>
+    <hr>
+    <%= render "shared/footer" %>
     <% if Rails.env.development? %>
       <% console %>
     <% end %>

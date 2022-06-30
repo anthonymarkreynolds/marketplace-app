@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :find_user
 
   def index
+    @challenges = Challenge.where(user: @user)
   end
 
   def find_user
