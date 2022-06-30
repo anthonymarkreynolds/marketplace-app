@@ -1,7 +1,10 @@
-<h1><%=@user.username%> Profile</h1>
+<h1><%=@user.username%>'s profile</h1>
 <div>
-  <h2>Challenges</h2>
-  <span>no challenges</span>
-  <h2>Submissions</h2>
-  <span>no submissions</span>
+  <h2>Created Challenges</h2>
+  <% if user_signed_in? && (current_user.id == @user.id) %>
+    <%= link_to "Create New Challenge", new_challenge_url %>
+  <%end%>
+  <p>no challenges</p>
+  <h2>Completed Challenges</h2>
+  <p>no submissions</p>
 </div>
