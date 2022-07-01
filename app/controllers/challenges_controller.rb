@@ -11,6 +11,14 @@ class ChallengesController < ApplicationController
   def show
   end
 
+  def attempt_challenge
+    if challenge_params[:solution] == Challenge.find_by(id: params[:id])[:solution]
+      flash.notice = 'solution is correct'
+    else
+      flash.alert = 'solution is incorrect'
+    end
+    redirect_to challenge_url
+  end
   # GET /challenges/new
   def new
     @challenge = Challenge.new
@@ -66,7 +74,7 @@ class ChallengesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def challenge_params
-      params.require(:challenge).permit(:title, :description, :author_id, :votes)
+      params.require(:challenge).permit(:title, :description, :author_id, :votes, :solution, :challenge)
     end
 
     def authorize_user

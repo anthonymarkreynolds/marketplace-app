@@ -15,6 +15,11 @@
   <body class="container">
     <%= render "shared/header" %>
     <hr>
+    <% if flash[:alert] %>
+      <div id="alert">
+         <%= flash[:alert] %> 
+      </div>
+    <% end %>
     <%= yield %>
     <hr>
     <%= render "shared/footer" %>
