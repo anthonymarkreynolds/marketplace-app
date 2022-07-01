@@ -1,24 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<h1>
   <%= @challenge.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @challenge.description %>
-</p>
-
-<p>
+</h1>
   <strong>Author:</strong>
-  <%= @challenge.user.username %>
-</p>
+  <%= link_to @challenge.user.username, "/users/#{@challenge.user.username}" %>
+  <br>
+<strong>Description:</strong>
+<p><%= @challenge.description %></p>
+
 
 <p>
   <strong>Votes:</strong>
   <%= @challenge.votes %>
 </p>
 
-<%= link_to 'Edit', edit_challenge_path(@challenge) %> |
+<% if user_signed_in? and (@challenge.user == current_user) %>
+  <%= link_to 'Edit', edit_challenge_path(@challenge) %>
+<%end%>
 <%= link_to 'Back', challenges_path %>

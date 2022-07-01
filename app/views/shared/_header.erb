@@ -2,16 +2,14 @@
   <h2>Challenge Code<h2>
   <h4>Welcome<%= user_signed_in? ? ", #{current_user.username}" : "" %></h4>
   <nav>
+    <%= link_to "Home", root_url, class: "button" %>
+    <%= link_to "Challenges", challenges_url, class: "button" %>
     <% if user_signed_in? %>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
-      <%= link_to "My Profile", "/users/#{current_user.username}"%>
+      <%= link_to "My Profile", "/users/#{current_user.username}", class: "button"%>
+      <%= link_to "Sign out", destroy_user_session_path, class: "button", method: :delete%>
     <% else %>
-      <%= link_to "Sign up", new_user_registration_path %>
-      <%= link_to "Sign in", new_user_session_path %>
+      <%= link_to "Sign up", new_user_registration_path, class: "button" %>
+      <%= link_to "Sign in", new_user_session_path, class: "button" %>
     <% end %>
-  </nav>
-  <nav>
-    <%= link_to "Home", root_url %>
-    <%= link_to "Challenges", challenges_url %>
   </nav>
 </header>

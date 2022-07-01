@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
-  before_action :find_user
+  # before_action :find_user
 
   def index
-    @challenges = Challenge.where(user: @user)
+    @users = User.all
   end
 
-  def find_user
+  def show
     @user = User.find_by(username: params[:username])
+    @challenges = Challenge.where(user: @user)
   end
 end

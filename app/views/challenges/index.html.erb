@@ -13,10 +13,10 @@
   </thead>
 
   <tbody>
-    <% @challenges.each do |challenge| %>
+    <% @challenges.reverse.each do |challenge| %>
       <tr>
         <td><%= challenge.title %></td>
-        <td><%= challenge.user.username %></td>
+        <td><%=link_to challenge.user.username, "/users/#{challenge.user.username}" %></td>
         <td><%= challenge.votes %></td>
         <td><%= link_to 'View', challenge %></td>
         <% if user_signed_in? && (challenge.user == current_user) %>
@@ -30,4 +30,6 @@
 
 <br>
 
-<%= link_to 'New Challenge', new_challenge_path %>
+<% if user_signed_in? %>
+  <%= link_to 'Create New Challenge', new_challenge_path, class: "button" %>
+<%end%>
