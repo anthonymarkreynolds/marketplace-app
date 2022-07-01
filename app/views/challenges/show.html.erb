@@ -15,20 +15,24 @@
   <%= @challenge.votes %>
 </p>
 
-<h2>Submit Solution</h2>
-<%= form_for :challenge, url: "/challenges/#{@challenge.id}/solution", method: :put do |form| %>
-
-  <div class="field">
-    <%= form.label :solution %>
-    <%= form.text_field :solution %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit "Attempt Challenge"%>
-  </div>
-
-  <%= form.hidden_field :challenge, value: @challenge %>
-<% end %>
+<% unless @challenge_completed %>
+  <h2>Submit Solution</h2>
+  <%= form_for :challenge, url: "/challenges/#{@challenge.id}/solution", method: :put do |form| %>
+  
+    <div class="field">
+      <%= form.label :solution %>
+      <%= form.text_field :solution %>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit "Attempt Challenge"%>
+    </div>
+  
+    <%= form.hidden_field :challenge, value: @challenge %>
+  <% end %>
+<%else%>
+  <h2>You have completed this challenge!</h2>
+<%end%>
 
 <% if user_signed_in? and (@challenge.user == current_user) %>
   <%= link_to 'Edit', edit_challenge_path(@challenge) %>

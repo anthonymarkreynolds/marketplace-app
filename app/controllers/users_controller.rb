@@ -8,5 +8,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by(username: params[:username])
     @challenges = Challenge.where(user: @user)
+    @submissions = Submission.where(user: @user).map{_1.challenge} 
   end
 end

@@ -9,11 +9,15 @@ class ChallengesController < ApplicationController
 
   # GET /challenges/1 or /challenges/1.json
   def show
+    @challenge_completed = !!Submission.find_by(user: current_user, challenge: @challenge)
   end
 
   def attempt_challenge
-    if challenge_params[:solution] == Challenge.find_by(id: params[:id])[:solution]
+    challenge = Challenge.find_by(id: params[:id])
+    if challenge_params[:solution] == challenge[:solution] 
       flash.notice = 'solution is correct'
+      solution = Submission.new(user: current_user, challenge: challenge)
+      solution.save
     else
       flash.alert = 'solution is incorrect'
     end

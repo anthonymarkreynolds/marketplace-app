@@ -7,7 +7,7 @@
     <tr>
       <th>Title</th>
       <th>Author</th>
-      <th>Votes</th>
+      <th>Submissions</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +17,7 @@
       <tr>
         <td><%= challenge.title %></td>
         <td><%=link_to challenge.user.username, "/users/#{challenge.user.username}" %></td>
-        <td><%= challenge.votes %></td>
+        <td><%= challenge.submissions.length %></td>
         <td><%= link_to 'View', challenge %></td>
         <% if user_signed_in? && (challenge.user == current_user) %>
           <td><%= link_to 'Edit', edit_challenge_path(challenge) %></td>
