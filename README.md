@@ -16,8 +16,19 @@ TODO: rationalise
 ### Purpose
 ### Functionality / features
 ### Sitemap
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/sitemap.png)
 ### Screenshots
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot1.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot2.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot3.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot4.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot5.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot6.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot7.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot8.png)
 ### Target audience
+- Recreational Programmers
+- People who enjoy solving puzzles
 ### Tech stack (e.g. html, css, deployment platform, etc)
 - Backend Language: Ruby 
 - Web Framework: Ruby on Rails 
