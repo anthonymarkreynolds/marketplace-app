@@ -1,18 +1,18 @@
 # Challenge Code
 
-## R7 Identification of the problem you are trying to solve by building this particular marketplace app
+## Identification of the problem you are trying to solve by building this particular marketplace app
 Challenge Code is a puzzle solving hub where users create challenges or submit solutions to other user generated challenges.
 
-## R8 Why is it a problem that needs solving? 
+## Why is it a problem that needs solving? 
 TODO: rationalise
 
-## R9 A link (URL) to your deployed app (i.e. website)
+## A link (URL) to your deployed app (i.e. website)
 [https://challenge--code.herokuapp.com](https://challenge--code.herokuapp.com)
 
-## R10 A link to your GitHub repository (repo).
+## A link to your GitHub repository (repo).
 [https://github.com/anthonymarkreynolds/marketplace-app/](https://github.com/anthonymarkreynolds/marketplace-app/)
 
-## R11 Description of your marketplace app (website), including:
+## Description of your marketplace app (website), including:
 ### Purpose
 ### Functionality / features
 ### Sitemap
@@ -26,12 +26,16 @@ TODO: rationalise
 - Deployment: Heroku 
 - Source Control: Git, GitHub 
 
-## R12 User stories for your app 
-## R13 Wireframes for your app 
-## R14 An ERD for your app 
-## R15 Explain the different high-level components (abstractions) in your app 
-## R16 Detail any third party services that your app will use 
-## R17 Describe your projects models in terms of the relationships (active record associations) they have with each other  
-## R18 Discuss the database relations to be implemented in your application 
-## R19 Provide your database schema design 
-## R20 Describe the way tasks are allocated and tracked in your project 
+## User stories for your app 
+## Wireframes for your app 
+## An ERD for your app 
+## Explain the different high-level components (abstractions) in your app 
+## Detail any third party services that your app will use 
+### Heroku
+Platform as a service for web applications
+### Github
+Cloud based remote git repository hosting
+## Describe your projects models in terms of the relationships (active record associations) they have with each other  
+## Discuss the database relations to be implemented in your application 
+## Provide your database schema design 
+## Describe the way tasks are allocated and tracked in your project 
