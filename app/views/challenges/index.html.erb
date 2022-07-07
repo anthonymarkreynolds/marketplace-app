@@ -6,35 +6,7 @@
   <%= link_to 'Create New Challenge', new_challenge_path, class: "button" %>
 <%end%>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title <%= link_to '▼', :sort => "title DESC" %><%= link_to '▲', :sort => "title" %> </th>
-      <th>Author <%= link_to '▼', :sort => "user DESC" %><%= link_to '▲', :sort => "user" %> </th>
-      <th>Difficulty <%= link_to '▼', :sort => "difficulty DESC" %><%= link_to '▲', :sort => "difficulty" %> </th>
-      <th>Submissions <%= link_to '▼', :sort => "submissions_id DESC" %><%= link_to '▲', :sort => "submissions_id" %> </th>
-      <th>Votes <%= link_to '▼', :sort => "votes DESC" %><%= link_to '▲', :sort => "votes" %></th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @challenges.each do |challenge| %>
-      <tr>
-        <td><%= challenge.title %></td>
-        <td><%=link_to challenge.user.username, "/users/#{challenge.user.username}" %></td>
-        <td><%= challenge.difficulty %></td>
-        <td><%= challenge.submissions.length %></td>
-        <td><%= challenge.votes.length %></td>
-        <td><%= link_to 'View', challenge %></td>
-        <% if user_signed_in? && (challenge.user == current_user) %>
-          <td><%= link_to 'Edit', edit_challenge_path(challenge) %></td>
-          <td><%= link_to 'Destroy', challenge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <%end%>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= render "shared/challenges_table" %>
 
 <br>
 

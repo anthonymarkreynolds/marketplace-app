@@ -4,8 +4,8 @@ class Challenge < ApplicationRecord
   validates :solution, presence: true, on: :create
   validates :difficulty, presence: true, on: :create
 
+  enum difficulty: [:beginner, :intermediate, :advanced]
   belongs_to :user
   has_many :submissions, dependent: :destroy
   has_many :votes, dependent: :destroy
-  enum difficulty: [:beginner, :intermediate, :advanced]
 end

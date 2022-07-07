@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(username: params[:username])
-    @challenges = Challenge.where(user: @user)
-    @submissions = Submission.where(user: @user).map{_1.challenge} 
+    @challenges = Challenge.where(user: @user).order(params[:sort] || :created_at)
+    @submissions = Submission.where(user: @user).map{_1.challenge} # TODO: Find a way to order using params
   end
 end
