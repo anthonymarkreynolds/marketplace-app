@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   has_many :challenges
   has_many :submissions
+  has_many :votes
 
   has_one_attached :avatar
   after_commit :add_default_avatar, on: %i[create update]

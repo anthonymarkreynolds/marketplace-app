@@ -13,17 +13,42 @@ class ChallengesController < ApplicationController
     @challenge_completed = !!Submission.find_by(user: current_user, challenge: @challenge)
   end
 
-  def attempt_challenge
+  def upvote
     challenge = Challenge.find_by(id: params[:id])
-    if challenge_params[:solution] == challenge[:solution] 
-      flash.notice = 'solution is correct'
-      solution = Submission.new(user: current_user, challenge: challenge)
-      solution.save
-    else
-      flash.alert = 'solution is incorrect'
+    if challenge.user == current_user
+      flash.alert = 'Cannot upvote your own challenge'
+    else #I'm getting strange errors when using elsif
+      if user_signed_in?
+        vote = Vote.find_by(user: current_user)
+        if vote
+          vote.destroy
+          flash.notice = 'Vote removed'
+        else
+          flash.notice = 'Challenge upvoted.'
+          vote = Vote.new(user: current_user, challenge: challenge)
+          vote.save
+        end
+      end
     end
     redirect_to challenge_url
   end
+
+  def attempt_challenge
+    challenge = Challenge.find_by(id: params[:id])
+    if challenge.user == current_user
+      flash.alert = 'Cannot submit to your own challenge'
+    else 
+      if challenge_params[:solution] == challenge[:solution] 
+        solution = Submission.new(user: current_user, challenge: challenge)
+        solution.save
+        flash.notice = 'Solution is correct!'
+      else
+        flash.alert = 'Solution is incorrect'
+      end
+    end
+    redirect_to challenge_url
+  end
+
   # GET /challenges/new
   def new
     @challenge = Challenge.new

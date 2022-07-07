@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_07_045350) do
+ActiveRecord::Schema.define(version: 2022_07_07_104138) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,8 @@ ActiveRecord::Schema.define(version: 2022_07_07_045350) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "solution"
     t.integer "difficulty"
+    t.bigint "submissions_id"
+    t.index ["submissions_id"], name: "index_challenges_on_submissions_id"
     t.index ["user_id"], name: "index_challenges_on_user_id"
   end
 
@@ -77,9 +79,21 @@ ActiveRecord::Schema.define(version: 2022_07_07_045350) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "votes", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "challenge_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["challenge_id"], name: "index_votes_on_challenge_id"
+    t.index ["user_id"], name: "index_votes_on_user_id"
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "challenges", "submissions", column: "submissions_id"
   add_foreign_key "challenges", "users"
   add_foreign_key "submissions", "challenges"
   add_foreign_key "submissions", "users"
+  add_foreign_key "votes", "challenges"
+  add_foreign_key "votes", "users"
 end

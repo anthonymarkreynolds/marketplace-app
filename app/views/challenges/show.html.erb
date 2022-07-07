@@ -15,26 +15,33 @@
 
 <p>
   <strong>Votes:</strong>
-  <%= @challenge.votes %>
+  <%= @challenge.votes.length %>
 </p>
+  
+<% if @challenge.user != current_user && user_signed_in? %>
+  <% if !!(@challenge.votes.find_by user: current_user) %>
+    <%= link_to "remove vote", upvote_challenge_path, method: :put, class: "button" %> 
+  <%else%>
+    <%= link_to "upvote", upvote_challenge_path, method: :put, class: "button" %> 
+  <%end%>
+  <% unless @challenge_completed %>
+    <h2>Submit Solution</h2>
+    <%= form_for :challenge, url: "/challenges/#{@challenge.id}/solution", method: :put do |form| %>
 
-<% unless @challenge_completed %>
-  <h2>Submit Solution</h2>
-  <%= form_for :challenge, url: "/challenges/#{@challenge.id}/solution", method: :put do |form| %>
-  
-    <div class="field">
-      <%= form.label :solution %>
-      <%= form.text_field :solution %>
-    </div>
-  
-    <div class="actions">
-      <%= form.submit "Attempt Challenge"%>
-    </div>
-  
-    <%= form.hidden_field :challenge, value: @challenge %>
-  <% end %>
-<%else%>
-  <h2>You have completed this challenge!</h2>
+      <div class="field">
+        <%= form.label :solution %>
+        <%= form.text_field :solution %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit "Attempt Challenge"%>
+      </div>
+
+      <%= form.hidden_field :challenge, value: @challenge %>
+    <% end %>
+  <%else%>
+    <h2>You have completed this challenge!</h2>
+  <%end%>
 <%end%>
 
 <% if user_signed_in? and (@challenge.user == current_user) %>
