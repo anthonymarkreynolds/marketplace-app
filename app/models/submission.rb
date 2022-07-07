@@ -1,4 +1,4 @@
 class Submission < ApplicationRecord
   belongs_to :user
-  belongs_to :challenge, counter_cache: true
+  belongs_to :challenge
 end
