@@ -3,6 +3,9 @@
 <h1>
   <%= @challenge.title %>
 </h1>
+<strong>Difficulty:</strong>
+<%= @challenge.difficulty %>
+<br>
   <strong>Author:</strong>
   <%= link_to @challenge.user.username, "/users/#{@challenge.user.username}" %>
   <br>
