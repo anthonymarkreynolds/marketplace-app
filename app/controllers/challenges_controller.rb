@@ -4,7 +4,8 @@ class ChallengesController < ApplicationController
   before_action :authorize_user, only: [:edit, :update, :destroy]
   # GET /challenges or /challenges.json
   def index
-    @challenges = Challenge.all
+
+    @challenges = Challenge.order(params[:sort] || :created_at)
   end
 
   # GET /challenges/1 or /challenges/1.json
