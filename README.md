@@ -237,5 +237,7 @@ end
 ```
 ## Description of how tasks are allocated and tracked
 For managing task allocation I opted for simplicty and as little overhead as possible, so I went with a default board with no labels. This is rather practical for a small project with a single contributer as it saves time and provides a cleaner overview of the project as a whole. 
+
 [Link to Trello Board](https://trello.com/b/9KedP3J1/marketplace-app)
+
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/trello.png)
