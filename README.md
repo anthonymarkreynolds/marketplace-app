@@ -14,7 +14,18 @@ TODO: rationalise
 
 ## Description of marketplace app:
 ### Purpose
+Challenge Code provides puzzle solving hub for creating challenges or submitting solutions to other user generated challenges.
 ### Functionality / features
+- Challenge creation
+  - Challenge editing
+  - Challenge deletion
+- Challenge submission
+- Challenge voting
+- User profiles
+  - list of created challenges
+  - list of completed challenges
+- Ability to sort challenges
+
 ### Sitemap
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/sitemap.png)
 ### Screenshots
@@ -73,7 +84,6 @@ TODO: rationalise
 - As a challenge completer I want to view challenges I have completed.
 - As a challenge completer I want to upvote a challenge.
 
-Challenge Completer
 ## Wireframes
 ### Home
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/home.png)
@@ -98,12 +108,17 @@ Challenge Completer
 
 
 ## Explain the different high-level components (abstractions)
+
 ## Third party services
 ### Heroku
 Platform as a service for web applications
 ### Github
 Cloud based remote git repository hosting
 ## Description of models in terms of the relationships (active record associations) they have with each other  
+
 ## Discussions of database relations
+
 ## Database schema design 
+
 ## Description of how tasks are allocated and tracked
+
