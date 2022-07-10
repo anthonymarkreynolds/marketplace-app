@@ -156,6 +156,7 @@ An Active Storage Variant Record: has one Active Storage Blob.
 ## Discussions of database relations
 
 ## Database schema design
+My database schema should accurately reflect what was planned and mapped out in my ERD.
 ```ruby
 ActiveRecord::Schema.define(version: 2022_07_07_104138) do
 
