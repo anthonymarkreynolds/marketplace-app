@@ -25,16 +25,16 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 - User profiles: Users can create profiles with a display picture and username. Each profile shows a list of completed challenges and a list of created challenges, both of which can be sorted by attribute.
 
 ### Sitemap
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/sitemap.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/sitemap.png)
 ### Screenshots
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot1.png)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot2.png)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot3.png)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot4.png)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot5.png)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot6.png)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot7.png)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/screenshot8.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot1.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot2.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot3.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot4.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot5.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot6.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot7.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/screenshot8.png)
 ### Target audience
 - Recreational Programmers
 - People who enjoy solving puzzles
@@ -86,41 +86,41 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 
 ## Wireframes
 ### Home (Guest)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home_Guest.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Home_Guest.png)
 ### Home (Signed In)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home_Signed-In.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Home_Signed-In.png)
 ### About (Signed In)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/About_Signed-In.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/About_Signed-In.png)
 ### Contact (Signed In)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Contact_Signed-In.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Contact_Signed-In.png)
 ### Sign Up 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Sign-up.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Sign-up.png)
 ### Sign In
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Sign-in.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Sign-in.png)
 ### Edit Account 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit-Account.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Edit-Account.png)
 ### User Profile (Signed In / Guest) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User-Profile_Signed-In.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/User-Profile_Signed-In.png)
 ### User Profile (Signed In, Own Profile) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User-Profile_Signed-In_Own-Profile.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/User-Profile_Signed-In_Own-Profile.png)
 ### Challenges (Signed In) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges_Signed-In.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Challenges_Signed-In.png)
 ### Challenges (Guest) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges_Guest.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Challenges_Guest.png)
 ### Challenge (Guest) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge_Guest.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Challenge_Guest.png)
 ### Challenge (Signed In) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge_Signed-In.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Challenge_Signed-In.png)
 ### Challenge (Signed In, Own Challenge) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge_Signed-In_Own-Challenge.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Challenge_Signed-In_Own-Challenge.png)
 ### Create New Challenge
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Create-New-Challenge.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Create-New-Challenge.png)
 ### Edit Challenge
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit-Challenge.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/Edit-Challenge.png)
 
 
 ## ERD
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/ERD.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/ERD.png)
 
 ## Explain the different high-level components (abstractions)
 ### Challenges
@@ -154,6 +154,7 @@ An Active Storage Blob: has many Active Storage Attachements and has many Active
 An Active Storage Variant Record: has one Active Storage Blob.
 
 ## Discussions of database relations
+
 
 ## Database schema design
 My database schema should largely reflect what was planned and mapped out in my ERD.
@@ -250,4 +251,4 @@ For managing task allocation I opted for simplicty and as little overhead as pos
 
 [Link to Trello Board](https://trello.com/b/9KedP3J1/marketplace-app)
 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/trello.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/docs/trello.png)
