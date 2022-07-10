@@ -16,7 +16,7 @@ Expedient creation of question & answer problems with minimal bloat provides a h
 ### Purpose
 Challenge Code provides a puzzle solving hub for creating challenges or submitting solutions to other user generated challenges.
 ### Functionality / features
-- Challenge creation: Users may create their own challenges which other users can submit solutions to. Each challenge has a title, problem description and a solution form for attempting the challenge 
+- Challenge creation: Users may create their own challenges which other users can submit solutions to. Each challenge has a title, problem description, difficulty rating, vote count and a solution form for attempting the challenge 
 - Public challenge board: A list of existing challenges which can be sorted by attribute.
 - Challenge editing: Users may edit challenges they have created.
 - Challenge deletion: Users may delete challenges they have created.
