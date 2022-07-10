@@ -99,7 +99,7 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Sign-in.png)
 ### Edit Account 
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit-Account.png)
-### User Profile (Signed In) 
+### User Profile (Signed In / Guest) 
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User-Profile_Signed-In.png)
 ### User Profile (Signed In, Own Profile) 
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User-Profile_Signed-In_Own-Profile.png)
