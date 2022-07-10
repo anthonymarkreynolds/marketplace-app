@@ -14,17 +14,15 @@ TODO: rationalise
 
 ## Description of marketplace app:
 ### Purpose
-Challenge Code provides puzzle solving hub for creating challenges or submitting solutions to other user generated challenges.
+Challenge Code provides a puzzle solving hub for creating challenges or submitting solutions to other user generated challenges.
 ### Functionality / features
-- Challenge creation
-  - Challenge editing
-  - Challenge deletion
-- Challenge submission
-- Challenge voting
-- User profiles
-  - list of created challenges
-  - list of completed challenges
-- Ability to sort challenges
+- Challenge creation: Users may create their own challenges which other users can submit solutions to. Each challenge has a title, problem description and a solution form for attempting the challenge 
+- Public challenge board: A list of existing challenges which can be sorted by attribute.
+- Challenge editing: Users may edit challenges they have created.
+- Challenge deletion: Users may delete challenges they have created.
+- Challenge upvoting: Users may upvote or remove an upvote from another user's challenge.
+- Challenge submission: When a user has found the solution to a challenge they can submit it in the solution form for that challene.
+- User profiles: Users can create profiles with a display picture and username. Each profile shows a list of completed challenges and a list of created challenges, both of which can be sorted by attribute.
 
 ### Sitemap
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/sitemap.png)
