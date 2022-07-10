@@ -107,6 +107,14 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/ERD.png)
 
 ## Explain the different high-level components (abstractions)
+### Challenges
+Challenges are the cheif items that can be created in the app. Challenges are made by users. Each challenge can be upvoted, attempted by another user and rated with a difficulty.
+### Submissions
+Submissions are a simple item that exists when a correct solution to a challenge is created.
+### Votes
+Votes are simple items that are created or destroyed when a user adds or removed a vote from an other user's challenge.
+### User accounts
+User accounts are the means by which most interactions with challenges, submissions and votes are made possible. A user account has a corresponding profile that shows various details and displays completed and created challenges. All challenges submissions and votes are created from user accounts.
 
 ## Third party services
 ### Heroku
@@ -208,4 +216,5 @@ ActiveRecord::Schema.define(version: 2022_07_07_104138) do
 end
 ```
 ## Description of how tasks are allocated and tracked
+[Trello Board](https://trello.com/b/9KedP3J1/marketplace-app)
 TODO: create trello board
