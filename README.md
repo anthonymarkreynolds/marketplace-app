@@ -86,35 +86,35 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 
 ## Wireframes
 ### Home (Guest)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home(Guest).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home_Guest.png)
 ### Home (Signed In)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home(Signed In).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home_Signed-In.png)
 ### About (Signed In)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/About(Signed In).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/About_Signed-In.png)
 ### Contact (Signed In)
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Contact(Signed In).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Contact_Signed-In.png)
 ### Sign Up 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Sign up.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Sign-up.png)
 ### Edit Account 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit Account.png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit-Account.png)
 ### User Profile (Signed In) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User Profile (Signed In).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User-Profile_Signed-In.png)
 ### User Profile (Signed In, Own Profile) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User Profile (Signed In, Own Profile).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User-Profile_Signed-In_Own-Profile.png)
 ### Challenges (Signed In) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges (Signed In).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges_Signed-In.png)
 ### Challenges (Guest) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges (Guest).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges_Guest.png)
 ### Challenge (Guest) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge (Guest).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge_Guest.png)
 ### Challenge (Signed In) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge (Signed In).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge_Signed-In.png)
 ### Challenge (Signed In, Own Challenge) 
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge (Signed In, Own Challenge).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge_Signed-In_Own-Challenge.png)
 ### Create New Challenge
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Create New Challenge).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Create-New-Challenge.png)
 ### Edit Challenge
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit Challenge).png)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit-Challenge.png)
 
 
 ## ERD
