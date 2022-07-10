@@ -148,8 +148,11 @@ A Vote: has one User and has one Challenge
 A User: has many Challenges, has many Submissions, has many Votes and has one active storage attachment.
 ### Active Storage 
 An Active Storage Attachment: has one User and one Active Storage Blob.
+
 An Active Storage Blob: has many Active Storage Attachements and has many Active Storage Variant Records.
+
 An Active Storage Variant Record: has one Active Storage Blob.
+
 ## Discussions of database relations
 
 ## Database schema design
