@@ -1,7 +1,7 @@
 # Challenge Code
 
 ## Identification of the problem solved by building this particular marketplace app
-Challenge Code is a puzzle solving hub where users create challenges or submit solutions to other user generated challenges.
+Challenge Code has a straight forward means of describing any question and answer format problems in the form of a descrete challenge. This provides a rapid and ad-hoc mechanism for creating individual or grouped problem sets for any purpose (eg. education, recreational problem solving). With the ability to see what challenges have been completed provides a way to track your progress and the progress of other users. I can also be considered akin to a pastbin-like platform for problem solving challenges.
 
 ## Why is it a problem that needs solving? 
 TODO: rationalise
@@ -21,7 +21,7 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 - Challenge editing: Users may edit challenges they have created.
 - Challenge deletion: Users may delete challenges they have created.
 - Challenge upvoting: Users may upvote or remove an upvote from another user's challenge.
-- Challenge submission: When a user has found the solution to a challenge they can submit it in the solution form for that challene.
+- Challenge submission: When a user has found the solution to a challenge they can submit it in the solution form for that challenge.
 - User profiles: Users can create profiles with a display picture and username. Each profile shows a list of completed challenges and a list of created challenges, both of which can be sorted by attribute.
 
 ### Sitemap
@@ -119,4 +119,4 @@ Cloud based remote git repository hosting
 ## Database schema design 
 
 ## Description of how tasks are allocated and tracked
-
+TODO: create trello board
