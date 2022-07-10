@@ -31,13 +31,49 @@ TODO: rationalise
 - People who enjoy solving puzzles
 ### Tech stack (e.g. html, css, deployment platform, etc)
 - Backend Language: Ruby 
-- Web Framework: Ruby on Rails 
+  - Intelesense: Solargraph
+- Web Framework: Ruby on Rails
+  - User Authentication: Devise
+- Markup Language: HTML
 - Styles: Skeleton CSS 
 - Database: Postgresql 
 - Deployment: Heroku 
 - Source Control: Git, GitHub 
 
 ## User stories
+### Guest
+- As a guest I want to traverse public areas of the site.
+- As a guest I want to view user profiles.
+- As a guest I want to browse challenges
+  - As a guest I want to sort challenges by type.
+  - As a guest I want to view a individual challenge page.
+- As a guest I want to sign up.
+- As a guest I want to request a password reset.
+### Challenge Author
+- As a challenge author I want to sign out.
+- As a challenge author I want to view my profile.
+- As a challenge author I want to edit my profile.
+- As a challenge author I want to view user profiles.
+- As a challenge author I want to browse challenges
+  - As a challenge author I want to sort challenges by type.
+  - As a challenge author I want to view a individual challenge page.
+- As a challenge author I want to create a challenge.
+- As a challenge author I want to edit a challenge.
+- As a challenge author I want to delete a challenge.
+- As a challenge author I want to view challeneges I have created.
+### Challenge Completer
+- As a challenge completer I want to sign out.
+- As a challenge completer I want to view my profile.
+- As a challenge completer I want to edit my profile.
+- As a challenge completer I want to view user profiles.
+- As a challenge completer I want to browse challenges
+  - As a challenge completer I want to sort challenges by type.
+  - As a challenge completer I want to view a individual challenge page.
+- As a challenge completer I want to attempt a challenge.
+- As a challenge completer I want to view challenges I have completed.
+- As a challenge completer I want to upvote a challenge.
+
+Challenge Completer
 ## Wireframes
 ### Home
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/home.png)
