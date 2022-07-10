@@ -85,24 +85,38 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 - As a challenge completer I want to upvote a challenge.
 
 ## Wireframes
-### Home
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/home.png)
-### About
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/about.png)
-### Contact
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/contact.png)
-### Challenges
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/challenges.png)
-### Challenge
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/challenge.png)
-### Create/Edit Challenge
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/create_challenge.png)
-### Sign In
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/sign_in.png)
-### Sign up/edit profile
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/sign_up.png)
-### User Profile
-![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/profile.png)
+### Home (Guest)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home(Guest).png)
+### Home (Signed In)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Home(Signed In).png)
+### About (Signed In)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/About(Signed In).png)
+### Contact (Signed In)
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Contact(Signed In).png)
+### Sign Up 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Sign up.png)
+### Edit Account 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit Account.png)
+### User Profile (Signed In) 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User Profile (Signed In).png)
+### User Profile (Signed In, Own Profile) 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/User Profile (Signed In, Own Profile).png)
+### Challenges (Signed In) 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges (Signed In).png)
+### Challenges (Guest) 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenges (Guest).png)
+### Challenge (Guest) 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge (Guest).png)
+### Challenge (Signed In) 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge (Signed In).png)
+### Challenge (Signed In, Own Challenge) 
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Challenge (Signed In, Own Challenge).png)
+### Create New Challenge
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Create New Challenge).png)
+### Edit Challenge
+![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/Edit Challenge).png)
+
+
 ## ERD
 ![](https://raw.githubusercontent.com/anthonymarkreynolds/marketplace-app/main/app/assets/images/ERD.png)
 
@@ -122,7 +136,11 @@ Platform as a service for web applications
 ### Github
 Cloud based remote git repository hosting
 ## Description of models in terms of the relationships (active record associations) they have with each other  
-
+### Challenge Model
+The Challenge model is 
+### Submissions Model
+### Votes Model
+### Users Model
 ## Discussions of database relations
 
 ## Database schema design
