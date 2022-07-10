@@ -4,7 +4,7 @@ class ChallengesController < ApplicationController
   before_action :authorize_user, only: [:edit, :update, :destroy]
   # GET /challenges or /challenges.json
   def index
-
+    # collect and sort challenges
     @challenges = Challenge.order(params[:sort] || :created_at)
   end
 
@@ -13,39 +13,64 @@ class ChallengesController < ApplicationController
     @challenge_completed = !!Submission.find_by(user: current_user, challenge: @challenge)
   end
 
+  # voting for challenge
   def upvote
+
+    # grab current challenge id
     challenge = Challenge.find_by(id: params[:id])
+
+    # prevent users from upvoting their own challenges
     if challenge.user == current_user
       flash.alert = 'Cannot upvote your own challenge'
     else #I'm getting strange errors when using elsif
       if user_signed_in?
+
+        # check if already voted
         vote = Vote.find_by(user: current_user)
         if vote
+
+          # toggle vote off by destroying it.
           vote.destroy
           flash.notice = 'Vote removed'
         else
+
+          # creat a vote for current challenge
           flash.notice = 'Challenge upvoted.'
           vote = Vote.new(user: current_user, challenge: challenge)
           vote.save
         end
       end
     end
+
+    # redirect back to current challenge
     redirect_to challenge_url
   end
 
   def attempt_challenge
+
+    # get current challenge
     challenge = Challenge.find_by(id: params[:id])
+
+    # prevent user from making submissions to own challenge
     if challenge.user == current_user
       flash.alert = 'Cannot submit to your own challenge'
-    else 
-      if challenge_params[:solution] == challenge[:solution] 
+    else #TODO: fix strange error thrown when using elsif
+
+      # check if submitted solution is the correct solution for this challenge
+      if challenge_params[:solution] == challenge[:solution]
+
+        # create a new submission
         solution = Submission.new(user: current_user, challenge: challenge)
         solution.save
         flash.notice = 'Solution is correct!'
       else
+
+        # if provided solution is incorrect notify user
         flash.alert = 'Solution is incorrect'
       end
     end
+
+    # redirect back to challenge page
     redirect_to challenge_url
   end
 
