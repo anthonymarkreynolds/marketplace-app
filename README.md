@@ -4,7 +4,7 @@
 Challenge Code has a straight forward means of describing any question and answer format problem in the form of a descrete challenge. This provides a rapid and ad-hoc mechanism for creating individual or grouped problem sets for any purpose (eg. education, recreational problem solving). The ability to see what challenges have been completed provides a way to track your progress and the progress of other users. I can also be considered akin to a pastbin-like platform but for problem solving challenges.
 
 ## Why is it a problem that needs solving? 
-TODO: rationalise
+Expedient creation of question & answer problems with minimal bloat provides a headache free and fast solution to authoring and publishing such problems. And a simple progress tracking and challenge listing makes Challenge Code perfect for on the fly coding/math/other challenge practice.
 
 ## Link to deployed app
 [https://challenge--code.herokuapp.com](https://challenge--code.herokuapp.com)
@@ -12,7 +12,7 @@ TODO: rationalise
 ## Link to GitHub repository
 [https://github.com/anthonymarkreynolds/marketplace-app/](https://github.com/anthonymarkreynolds/marketplace-app/)
 
-## Description of marketplace app:
+## Description of marketplace app
 ### Purpose
 Challenge Code provides a puzzle solving hub for creating challenges or submitting solutions to other user generated challenges.
 ### Functionality / features
@@ -38,6 +38,8 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 ### Target audience
 - Recreational Programmers
 - People who enjoy solving puzzles
+- Educators
+- Students
 ### Tech stack (e.g. html, css, deployment platform, etc)
 - Backend Language: Ruby 
   - Intelesense: Solargraph
@@ -55,7 +57,7 @@ Challenge Code provides a puzzle solving hub for creating challenges or submitti
 - As a guest I want to view user profiles.
 - As a guest I want to browse challenges
   - As a guest I want to sort challenges by type.
-  - As a guest I want to view a individual challenge page.
+  - As a guest I want to view an individual challenge page.
 - As a guest I want to sign up.
 - As a guest I want to request a password reset.
 ### Challenge Author
