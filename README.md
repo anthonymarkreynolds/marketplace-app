@@ -139,17 +139,23 @@ Platform as a service for web applications
 Cloud based remote git repository hosting
 ## Description of models in terms of the relationships (active record associations) they have with each other  
 ### Challenge Model
-The Challenge model is 
+A Challenge: has one User, has many Votes and has many Submissions.
 ### Submissions Model
+A Submission: has one User and has one Challenge
 ### Votes Model
+A Vote: has one User and has one Challenge
 ### Users Model
+A User: has many Challenges, has many Submissions, has many Votes and has one active storage attachment.
+### Active Storage 
+An Active Storage Attachment: has one User and one Active Storage Blob.
+An Active Storage Blob: has many Active Storage Attachements and has many Active Storage Variant Records.
+An Active Storage Variant Record: has one Active Storage Blob.
 ## Discussions of database relations
 
 ## Database schema design
 ```ruby
 ActiveRecord::Schema.define(version: 2022_07_07_104138) do
 
-  # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "active_storage_attachments", force: :cascade do |t|
