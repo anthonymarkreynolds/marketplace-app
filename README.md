@@ -1,7 +1,7 @@
 # Challenge Code
 
 ## Identification of the problem solved by building this particular marketplace app
-Challenge Code has a straight forward means of describing any question and answer format problems in the form of a descrete challenge. This provides a rapid and ad-hoc mechanism for creating individual or grouped problem sets for any purpose (eg. education, recreational problem solving). With the ability to see what challenges have been completed provides a way to track your progress and the progress of other users. I can also be considered akin to a pastbin-like platform for problem solving challenges.
+Challenge Code has a straight forward means of describing any question and answer format problem in the form of a descrete challenge. This provides a rapid and ad-hoc mechanism for creating individual or grouped problem sets for any purpose (eg. education, recreational problem solving). The ability to see what challenges have been completed provides a way to track your progress and the progress of other users. I can also be considered akin to a pastbin-like platform but for problem solving challenges.
 
 ## Why is it a problem that needs solving? 
 TODO: rationalise
