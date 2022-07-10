@@ -154,7 +154,7 @@ An Active Storage Blob: has many Active Storage Attachements and has many Active
 An Active Storage Variant Record: has one Active Storage Blob.
 
 ## Discussions of database relations
-
+Challenges and users are related via a foriegn key such that a user can make many challenges. Users have the most relations to other tables, this is largely due to the fact that almost all interactions with the website are performed by them. They have realtions to challenges, submissions, votes and active storage attachements (for profile avatars). Submmisions and votes have identical relationships to users and challenges in that they both form linking-tables between them. Active storage tables are related primarily to one another via blobs and variant records although attchements are related one to one with users seeing as there is just a single attachment type in the entire project (user avartar).
 
 ## Database schema design
 My database schema should largely reflect what was planned and mapped out in my ERD.
